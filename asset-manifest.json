@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/workout-generator/static/css/main.a18a6f14.chunk.css",
+    "main.js": "/workout-generator/static/js/main.f72b6f5c.chunk.js",
+    "main.js.map": "/workout-generator/static/js/main.f72b6f5c.chunk.js.map",
+    "runtime-main.js": "/workout-generator/static/js/runtime-main.52ae8237.js",
+    "runtime-main.js.map": "/workout-generator/static/js/runtime-main.52ae8237.js.map",
+    "static/js/2.be026125.chunk.js": "/workout-generator/static/js/2.be026125.chunk.js",
+    "static/js/2.be026125.chunk.js.map": "/workout-generator/static/js/2.be026125.chunk.js.map",
+    "index.html": "/workout-generator/index.html",
+    "precache-manifest.5300f2699641c1bf40679d60c38fa251.js": "/workout-generator/precache-manifest.5300f2699641c1bf40679d60c38fa251.js",
+    "service-worker.js": "/workout-generator/service-worker.js",
+    "static/css/main.a18a6f14.chunk.css.map": "/workout-generator/static/css/main.a18a6f14.chunk.css.map",
+    "static/js/2.be026125.chunk.js.LICENSE.txt": "/workout-generator/static/js/2.be026125.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.52ae8237.js",
+    "static/js/2.be026125.chunk.js",
+    "static/css/main.a18a6f14.chunk.css",
+    "static/js/main.f72b6f5c.chunk.js"
+  ]
+}
