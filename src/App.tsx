@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import WorkoutSelector from "./components/workoutSelector";
 import Workout from "./components/workout";
 import "./App.css";
@@ -37,33 +37,37 @@ class App extends React.Component<AppProps, AppState> {
   render() {
     return (
       <div className="main">
-        <h1 className="title">WORKOUT</h1>
-        <Switch>
-          <Route
-            path="/workout"
-            component={() => (
-              <Workout
-                time={this.state.time}
-                type={this.state.type}
-                intensity={this.state.intensity}
-              />
-            )}
-          />
-          <Route
-            path="/select"
-            component={() => (
-              <WorkoutSelector
-                onTimeChange={(event) => this.handleTimeChange(event)}
-                onTypeChange={(event) => this.handleTypeChange(event)}
-                onIntensityChange={(event) => this.handleIntensityChange(event)}
-                time={this.state.time}
-                type={this.state.type}
-                intensity={this.state.intensity}
-              />
-            )}
-          />
-          <Redirect from="/" exact to="/select" />
-        </Switch>
+        <HashRouter basename="/">
+          <h1 className="title">WORKOUT</h1>
+          <Switch>
+            <Route
+              path="/workout"
+              component={() => (
+                <Workout
+                  time={this.state.time}
+                  type={this.state.type}
+                  intensity={this.state.intensity}
+                />
+              )}
+            />
+            <Route
+              path="/select"
+              component={() => (
+                <WorkoutSelector
+                  onTimeChange={(event) => this.handleTimeChange(event)}
+                  onTypeChange={(event) => this.handleTypeChange(event)}
+                  onIntensityChange={(event) =>
+                    this.handleIntensityChange(event)
+                  }
+                  time={this.state.time}
+                  type={this.state.type}
+                  intensity={this.state.intensity}
+                />
+              )}
+            />
+            <Redirect from="/" exact to="/select" />
+          </Switch>
+        </HashRouter>
       </div>
     );
   }
